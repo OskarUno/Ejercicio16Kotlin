@@ -27,7 +27,7 @@ class ItemAdapter : RecyclerView.Adapter<ItemAdapter.ViewHolder>() {
         this.paises = listaPaises.toMutableList()
     }
 
-    class ViewHolder(val binding: ItemLayoutBinding) :RecyclerView.ViewHolder(binding.root) {
+    class ViewHolder(val binding: ItemLayoutBinding) : RecyclerView.ViewHolder(binding.root) {
         fun bind(pais: Pais) {
             binding.textView.text = pais.nombre
             binding.imageView.load(pais.imgUrl)
