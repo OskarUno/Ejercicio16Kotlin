@@ -14,6 +14,9 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun initAdapter() {
-        TODO("Not yet implemented")
+        val itemAdapter = ItemAdapter()
+        val paises = PaisesLatam.paises
+        itemAdapter.setData(paises)
+        binding.RV.adapter = itemAdapter
     }
 }
