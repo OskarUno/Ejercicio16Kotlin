@@ -23,7 +23,6 @@ class ItemAdapter : RecyclerView.Adapter<ItemAdapter.ViewHolder>() {
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val item = paises[position]
         holder.bind(item)
-
     }
 
     fun setData(listaPaises: List<Pais>) {
@@ -46,8 +45,6 @@ class ItemAdapter : RecyclerView.Adapter<ItemAdapter.ViewHolder>() {
                  ).show()*/
             })
         }
-
-
     }
 
     interface PaisCallback {
